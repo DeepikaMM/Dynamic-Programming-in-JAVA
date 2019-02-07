@@ -1,5 +1,5 @@
 # Dynamic Programming Practice in JAVA
-`Contains some popular dp algorithm implementations.`
+This repo contains some popular dp algorithm implementations.
 
 ![Image](https://slideplayer.com/slide/7789312/25/images/2/Dynamic+Programming+Dynamic+Programming+is+a+general+algorithm+design+technique..jpg)
 
