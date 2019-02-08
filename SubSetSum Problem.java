@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class HelloWorld {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int test = in.nextInt();
@@ -21,19 +22,13 @@ public class HelloWorld {
     }
 
     public static boolean isSubSetSum(int arr[], int sum, int n) {
-        boolean subset[][] = new boolean[sum + 1][n + 1];
-        for (int j = 0; j <= n; j++)
-            subset[0][j] = true;
-        for (int i = 1; i <= sum; i++) {
-            subset[i][0] = false;
-            for (int k = 1; k <= sum; k++) {
-                for (int l = 1; l <= n; l++) {
-                    subset[k][l] = subset[k][l - 1];
-                    if (k >= arr[l - 1])
-                        subset[k][l] = subset[k][l] || subset[k - arr[l - 1]][l - 1];
-                }
-            }
+        if (sum == 0) {
+            return true;
         }
-        return subset[sum][n];
+        if (sum != 0 && n == 0)
+            return false;
+        if (arr[n - 1] > sum)
+            return isSubSetSum(arr, sum, n - 1);
+        return isSubSetSum(arr, sum, n - 1) || isSubSetSum(arr, sum - arr[n - 1], n - 1);
     }
 }
