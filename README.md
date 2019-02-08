@@ -8,9 +8,9 @@ _Currently Implemented Algorithms_
 Name | Source _(If Any)_
 ---- | -----------------
 Coin Change Problem | [Click Here](https://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/)
-Egg Drop Problem | [Click Here(https://www.geeksforgeeks.org/dynamic-programming-set-11-egg-dropping-puzzle/)
+Egg Drop Problem | [Click Here](https://www.geeksforgeeks.org/dynamic-programming-set-11-egg-dropping-puzzle/)
 Find Number Of ways to do partition | [Click Here](https://www.geeksforgeeks.org/bell-numbers-number-of-ways-to-partition-a-set/)
 Knapsack Problem | [Click Here](https://www.geeksforgeeks.org/knapsack-problem/)
 Number of ways to reach top left to bottom right | **N/A**
-Rod Cutting Problem | [Click Here](https://www.geeksforgeeks.org/dynamic-programming-set-13-cutting-a-rod/)
+Rod Cutting Problem | **N/A**
 Subset Sum Problem | [Click Here](https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/)
