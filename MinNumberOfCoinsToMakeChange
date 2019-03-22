@@ -1,0 +1,32 @@
+import java.util.*;
+public class MinNumberOfCoinsToMakeChange{
+    public static void main(String args[])
+    {
+        Scanner in  = new Scanner(System.in);
+        int V = in.nextInt();
+        int n = in.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i] = in.nextInt();
+        }
+       System.out.println(MakeChange(arr,V,n));
+    }
+    
+    public static int MakeChange(int arr[], int v, int n){
+        if(v==0 )
+            return 0;
+        int res = Integer.MAX_VALUE;
+       
+        
+        for(int j =0;j<n;j++){
+            if(arr[j]<=v){
+                int Subres =    MakeChange(arr,v-arr[j],n);
+                if(Subres!=Integer.MAX_VALUE && Subres+1<res)
+                res = Subres+1;
+            }
+         
+        }
+        
+        return res;
+    }
+}
